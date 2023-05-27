@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+/*Fonte a partir da máquina*/
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/Hug\ Me\ Tight\ -\ OTF.otf");
+}
+/*Fonte a partir de url google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+/* Formatação do Estilo*/
+body{
+    background-color: #8749bc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: #59227e;
+    font-weight: bold;
+    text-decoration: none;
+}
+    a:hover{
+        text-decoration: underline;
+    }
+div#interface{
+    background-color: #bb96bd;
+    width: 900px;
+    margin: 0px auto 0px auto; /* cima direita baixo esquerda */
+    padding: 10px;
+}
+
+header#cabecalhos{
+    border-bottom: 1px #8749bc solid; /* tamanho cor tipo*/
+    height: 150px;
+    background: url("../_imagens/logo-g-70px.png") no-repeat 0px 80px;
+}
+
+header#cabecalhos img#icone{
+    position: absolute;   
+    left: 970px;
+    top: 90px;
+}
+
+header#cabecalhos h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #412279;
+    text-shadow: 1px 1px 1px #412279c5;
+    padding: 0px;
+    margin-bottom: 2px;
+}
+
+header#cabecalhos h2{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15pt;
+    color: #59227e;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+p{
+    text-align: justify;
+    text-indent: 35px;
+}
+
+/* Formatação de Imagem com legendas */
+figure.foto-legenda{
+    border: 10px solid #8749bc;
+    box-shadow: 1px 1px 4px #59227e;
+    position: relative;
+}
+    figure.foto-legenda img{
+        width: 100%;
+        height: 100%;
+    }
+    figure.foto-legenda figcaption{
+        opacity: 0;
+        position: absolute;
+        top: 0px;
+        background-color: #1b114596;
+        color: #bb96bd;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        transition: opacity 1s;
+    }
+        figure.foto-legenda:hover figcaption{
+            
+            opacity: 1;
+        }
+
+/* Formatação do Menu */
+nav#menu{
+    display: block;
+}
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 35%;
+}        
+nav#menu li{
+    display: inline-block;
+    background-color: #412279;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 0.5s;
+}
+
+nav#menu li:hover{
+    background-color: #bb96bd;
+}
+
+nav#menu h1{
+    display: none;
+}
+
+nav#menu a{
+    color: #bb96bd;
+    text-decoration: none;
+}
+
+nav#menu a:hover{
+    color: #412279;
+}
+
+/* Formatação da estrutura e do corpo*/
+section#corpo{
+    display: block;
+    width: 490px;
+    float: left;
+    border-right: 1px solid #8749bc;
+    padding-right: 10px;
+}
+
+article#noticia-principal h2{
+    font-size: 12pt;
+    color: #412279;
+    background-color: #8749bc;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+    header#cabecalho-artigo h1{
+        font-family: 'FonteLogo', sans-serif;
+        font-size: 18pt;
+        color: #59227e;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    header#cabecalho-artigo h2{
+        font-size: 13pt;
+        background-color: #ffffff00;
+        color: #6b28a5;
+        margin: 0px;
+    }
+
+    header#cabecalho-artigo h3{
+        font-size: 12px;
+        color: #59227e;
+
+    }
+        .direita{
+            text-align: right;
+        }
+
+table#tabela{
+    border: 2px solid #59227e;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    table#tabela td{
+        border: 1px solid #59227e;
+        padding: 5px;
+        text-align: left;
+        vertical-align: middle;
+    }
+        table#tabela td.ce{
+            color: #e2bfe4;
+            background-color: #59227e;
+            text-align: center;
+            vertical-align: top;
+            font-weight: bold;
+        }
+
+        table#tabela td.cd{
+            color:#412279;
+            background-color: #bb82be;
+            
+        }
+
+    table#tabela caption{
+        color: #59227e;
+        font-size: 15pt;
+        font-weight: bolder;
+    }
+        table#tabela caption span{
+        display: block;
+        float: right;
+        color: #59227e;
+        font-size: 10pt;
+        margin-top: 10px;
+        }
+
+aside#lateral{
+    display: block;
+    width: 380px;
+    float: right;
+    background-color: #b382c4;
+    padding: 5px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px #4122797a;
+}
+
+    aside#lateral h2{
+        font-family: 'FonteLogo', sans-serif;
+        font-size: 18pt;
+        color: #59227e;
+        margin-top: 0px;
+    }
+
+    aside#lateral h3{
+        background-color: #6b28a5;
+        color: #bb96bd;
+        font-size: 15pt;
+        padding: 8px;
+    }
+
+footer#rodape{
+    clear: both;
+    border-top: 1px solid #8749bc;
+}
+    footer#rodape p{
+        text-align: center;
+    }
+
+
